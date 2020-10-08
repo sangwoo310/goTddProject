@@ -1,0 +1,26 @@
+package base64
+
+import (
+	"encoding/base64"
+	"github.com/stretchr/testify/assert"
+	"log"
+	"testing"
+)
+
+func TestBase64(t *testing.T)  {
+	encodeStr := "0ROG/Wklz+6DMcUI+ToKdmwB7xnTVnPvKW0yr+I08MQ411r00ORffqqRLq/GFtvFKfkTffGol2JTDxGE9WXVLrEK/7Y25WhVv6KsYJzY0hwqSavIi//U8emOx7YgNqW9B1wrX+WZyKWdlTs4Q8DuLOoLh/klt+SpwTY1duG/xjF2ZTafUfr3NDUGx75jogXtz7hqhy2+8cMOq2mKo3Sb4wOoJSgpO9QQTPBjES6H/izBJpB6I13lZXeESFcO8P4Io/En65z2gIfYuuXgct/rORkvNBViBaLCHAZBDm9FMnOj59YSCJ08fwyKD2UxlAFvMDspasXgLyjLmH3l/wKEqpOuh7OF80HXv0i8gmRBWPO+/3o+oSEIYMVfCiNp6xTSSaf8cDkRTEblEbcDmamrvKYXwC6U2ISN0WiI+5LTB65bqn7/w8s9LixENs8K03/+0AERB1kP9U3ieRw+C/8OAdsuiiy4vS4HE3TJAJkrUn5lXBIZ1NCUD7t2eh/7r4x9mPjNos9XSQbq2uW+XN0ReueFCqbJ8CiKQleSdlCDmINOgZjBARezqJlraSNw3ZlZFVjKuvkfV5DOkFxV+0e6ipmM5M5HUzCHktaTBIX3+wxxwDnrk0IbtSffXQDv652zPDuDas157aeaqymBeW8V3Nl9yHpdUGLu3KqfPpTG2GgOhAidfRcvS79xK2J7KeXKJVy+yarM9z8dj5ie23vi6D3rgdUK1ZSbguCp7c5c/VXRpYIP/6wvHhMdAmTSWeQTqrU5uSbHjLCSFgowBRhn+85xfOvciouXfnqqTXECQaMeUHVI/7TQbjRQkUtV7YBwQRsgjqYS2QB5FmZyEPwPC2rMZTlRTUvk3Mnej9QtNjalbXfoMdl/b8VZxUnvlBmfLg69hFEL1z+jAdaSk5wJSBcagMv6vBXztmAoYsC6aHX/BK4s2+VLuiqDlWE/c2mCb9zpdLWC8fXzePSqCV0+LRf1NpDTR4IYYqclMRytwt3FUrOxWBaWaFO9sHYDsRcnlGAoHmXG+nNcZDqUWFQ2qD9DYTQsEBTebtSZDP6Tm8be5sz+8/+Ob0b19CL4u7bTsYmZ0KILqzbk+9ri0M79l3686InamTYNRvYjqk2Hib500TIZgaYSSduZ7G8NYZPLdWzxkakSbIbKKU4lUj0XPNcpiXgh2eMnJgS0kMPuxKsEhYgKpgOCaCO4VSVqOnZZrAwydmgG9hV6I5fJ82soUPSNxrP2rdB/OwH6Ibw0nDXUuS2FXI/xxQAf/eohOWc9X42W+ANKvSt87cxAP8upx1DdxKttpsF1sv28gmEamEZ0FqICxGSOyRyvdm7ULD1HlOuJBnMrkap0P1Ob1MVDzgOP+R45YREcvCDLZAi6MbTAy4F3n0g0o+tYQBnwJPMDLMvLXofo109TdwcTzAZmK49riOAMKfzM70lYeQHxIws4+oDWXVrj0Dg5YaypyudVOJosnFniEtglrdyVwye/BaxXQ5rq/6jFgpqDn76nNWPRYPBLaAAVa1PbODBNX/pdb66IR4380EClceSCQb9TRhLnBtqw3to46FDdRlhaW0frVLtJDe4ORcWJ3wlSLisI"
+
+	plainByte, err := base64.StdEncoding.DecodeString(encodeStr)
+	assert.NoError(t, err)
+
+	log.Println(plainByte)
+
+	enc := base64.StdEncoding.EncodeToString(plainByte)
+	log.Println(enc)
+}
+
+func TestIntToByte(t *testing.T) {
+	value := 31
+
+	log.Println([]byte{byte(value)})
+}
