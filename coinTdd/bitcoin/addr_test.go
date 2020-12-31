@@ -3,7 +3,7 @@ package bitcoin
 import (
 	"crypto/sha256"
 	"encoding/hex"
-	"eos-go/btcsuite/btcutil/base58"
+	"github.com/eoscanada/eos-go/btcsuite/btcutil/base58"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/crypto/ripemd160"
 	"log"

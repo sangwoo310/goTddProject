@@ -2,7 +2,7 @@ package main
 
 import (
 	"encoding/hex"
-	"eos-go/btcsuite/btcutil/base58"
+	"github.com/eoscanada/eos-go/btcsuite/btcutil/base58"
 	"log"
 	"testing"
 )

@@ -3,7 +3,7 @@ package ethereum
 import (
 	"encoding/hex"
 	"fmt"
-	"coinTestProject/ethereum/module"
+	"goTddProject/coinTdd/ethereum/module"
 	"math/big"
 )
 

@@ -1,0 +1,53 @@
+# github.com/btcsuite/btcd v0.21.0-beta
+github.com/btcsuite/btcd/btcec
+github.com/btcsuite/btcd/chaincfg
+github.com/btcsuite/btcd/chaincfg/chainhash
+github.com/btcsuite/btcd/txscript
+github.com/btcsuite/btcd/wire
+# github.com/btcsuite/btclog v0.0.0-20170628155309-84c8d2346e9f
+github.com/btcsuite/btclog
+# github.com/btcsuite/btcutil v1.0.2
+github.com/btcsuite/btcutil
+github.com/btcsuite/btcutil/base58
+github.com/btcsuite/btcutil/bech32
+# github.com/davecgh/go-spew v1.1.1
+github.com/davecgh/go-spew/spew
+# github.com/eoscanada/eos-go v0.9.0
+github.com/eoscanada/eos-go
+github.com/eoscanada/eos-go/btcsuite/btcd/btcec
+github.com/eoscanada/eos-go/btcsuite/btcutil
+github.com/eoscanada/eos-go/btcsuite/btcutil/base58
+github.com/eoscanada/eos-go/ecc
+github.com/eoscanada/eos-go/eoserr
+github.com/eoscanada/eos-go/token
+# github.com/ethereum/go-ethereum v1.9.22
+github.com/ethereum/go-ethereum/rlp
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
+# github.com/shengdoushi/base58 v1.0.0
+github.com/shengdoushi/base58
+# github.com/stretchr/testify v1.6.1
+github.com/stretchr/testify/assert
+# github.com/tidwall/gjson v1.3.2
+github.com/tidwall/gjson
+# github.com/tidwall/match v1.0.1
+github.com/tidwall/match
+# github.com/tidwall/pretty v1.0.0
+github.com/tidwall/pretty
+# github.com/tidwall/sjson v1.0.4
+github.com/tidwall/sjson
+# go.uber.org/atomic v1.4.0
+go.uber.org/atomic
+# go.uber.org/multierr v1.2.0
+go.uber.org/multierr
+# go.uber.org/zap v1.10.0
+go.uber.org/zap
+go.uber.org/zap/buffer
+go.uber.org/zap/internal/bufferpool
+go.uber.org/zap/internal/color
+go.uber.org/zap/internal/exit
+go.uber.org/zap/zapcore
+# golang.org/x/crypto v0.0.0-20201002170205-7f63de1d35b0
+golang.org/x/crypto/ripemd160
+# gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c
+gopkg.in/yaml.v3

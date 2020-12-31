@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="473a499d-6dd4-4389-98bd-9ea90e755b94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/goTddProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/ada/tx_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/base64/base64_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/bitcash/tx_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/bitcoin/addr_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/bitcoin/transaction.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/bitcoin/tx_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/bsv/tx_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/coin_main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/eos/eos_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/ethereum/module/hexToAddress.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/ethereum/module/mTx.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/ethereum/transaction.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/ethereum/tx_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/keyPair_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/ltc/tx_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/ripple/xrp_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/coinTdd/tron/tron_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/telegramBot/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coinTdd/luk/chainId_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/telegramBot/service/telegram_bot.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coinTdd/bitcash/tx_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/coinTdd/bitcash/tx_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coinTdd/bitcoin/addr_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/coinTdd/bitcoin/addr_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coinTdd/ethereum/transaction.go" beforeDir="false" afterPath="$PROJECT_DIR$/coinTdd/ethereum/transaction.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coinTdd/keyPair_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/coinTdd/keyPair_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/telegramBot/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/telegramBot/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,17 +20,86 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coinTdd/luk/chainId_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/telegramBot/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+            <state relative-caret-position="76">
+              <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/telegramBot/service/telegram_bot.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
               <folding>
-                <element signature="e#14#78#0" expanded="true" />
+                <element signature="e#18#86#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/modules.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coinTdd/ada/tx_test.go">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coinTdd/base64/base64_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go.mod">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/coinTdd/keyPair_test.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go.sum">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="79" column="47" selection-start-line="79" selection-end-line="79" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../eos-go/actions_test.go">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -57,6 +114,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>base58</find>
+      <find>eos</find>
+      <find>eos-go</find>
+      <find>utils</find>
+      <find>github.com/go-telegram-bot-api/telegram-bot-api</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
@@ -67,7 +128,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/telegramBot.go" />
+        <option value="$PROJECT_DIR$/coinTdd/ethereum/transaction.go" />
+        <option value="$PROJECT_DIR$/coinTdd/bitcash/tx_test.go" />
+        <option value="$PROJECT_DIR$/coinTdd/keyPair_test.go" />
+        <option value="$PROJECT_DIR$/coinTdd/bitcoin/addr_test.go" />
+        <option value="$PROJECT_DIR$/coinTdd/luk/chainId.go" />
+        <option value="$PROJECT_DIR$/coinTdd/luk/chainId_test.go" />
+        <option value="$PROJECT_DIR$/go.mod" />
         <option value="$PROJECT_DIR$/telegramBot/main.go" />
+        <option value="$PROJECT_DIR$/telegramBot/service/telegram_bot.go" />
       </list>
     </option>
   </component>
@@ -81,6 +150,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -91,13 +161,35 @@
             <path>
               <item name="goTddProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="goTddProject" type="462c0819:PsiDirectoryNode" />
+              <item name="coinTdd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goTddProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goTddProject" type="462c0819:PsiDirectoryNode" />
+              <item name="coinTdd" type="462c0819:PsiDirectoryNode" />
+              <item name="ada" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goTddProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goTddProject" type="462c0819:PsiDirectoryNode" />
+              <item name="coinTdd" type="462c0819:PsiDirectoryNode" />
+              <item name="base64" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goTddProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goTddProject" type="462c0819:PsiDirectoryNode" />
               <item name="telegramBot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goTddProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goTddProject" type="462c0819:PsiDirectoryNode" />
+              <item name="telegramBot" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -105,10 +197,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workspace\GoWorkspace\src\goTddProject\vendor\github.com" />
+      <recent name="E:\Workspace\GoWorkspace\src\goTddProject\telegramBot\service" />
       <recent name="E:\Workspace\GoWorkspace\src\goTddProject\coinTdd" />
     </key>
   </component>
@@ -138,45 +233,44 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-2568" y="0" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10572337" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10731319" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.3299532" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3299532" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3299532" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3299532" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/coinTdd/ada/tx_test.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/go.sum">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5054">
-          <caret line="266" lean-forward="true" selection-start-line="266" selection-end-line="266" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/coinTdd/bsv/tx_test.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
@@ -184,29 +278,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coinTdd/bitcash/tx_test.go">
+    <entry file="file://$PROJECT_DIR$/telegramBot.go" />
+    <entry file="file://$PROJECT_DIR$/../bithumb-cm/adapter/utils/validate.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+        <state relative-caret-position="76">
+          <caret line="82" column="26" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bithumb-cm/adapter/utils/connector.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../bithumb-cm/adapter/utils/form_convert.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2782" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinTdd/ethereum/tx_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="e#17#247#0" expanded="true" />
+            <element signature="e#18#125#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/telegramBot.go">
+    <entry file="file://$PROJECT_DIR$/coinTdd/ethereum/transaction.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        <state relative-caret-position="1520">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/coinTdd/eos/eos_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="e#13#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinTdd/bitcash/tx_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinTdd/bitcoin/addr_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="48" column="62" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinTdd/ltc/tx_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="14" selection-start-line="14" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../eos-go/btcsuite/btcutil/base58/base58.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../eos-go/actions_test.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinTdd/luk/chainId_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.sum">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="79" column="47" selection-start-line="79" selection-end-line="79" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinTdd/ada/tx_test.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinTdd/base64/base64_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/telegram-bot-api@v4.6.4+incompatible/tests/key.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="49" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coinTdd/keyPair_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/modules.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/telegramBot/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        <state relative-caret-position="76">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/telegramBot/service/telegram_bot.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
           <folding>
-            <element signature="e#14#78#0" expanded="true" />
+            <element signature="e#18#86#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,7 +1,6 @@
 package bitcash
 
 import (
-	"bithumb-cm/adapter/utils"
 	"bytes"
 	"crypto/sha256"
 	"encoding/binary"
@@ -194,96 +193,96 @@ func TestBech32(t *testing.T) {
 	fmt.Println(enAddr)
 }
 
-func TestBchTxCreator(t *testing.T) {
-	// version set
-	version := uint32(2)
-	var b bytes.Buffer
-	var versionBuf [4]byte
-	binary.LittleEndian.PutUint32(versionBuf[:], version)
-	b.Write(versionBuf[:])
-	versionTx := hex.EncodeToString(b.Bytes())
-	fmt.Println(versionTx)
-
-	// input tx count
-	inputCount := 1
-	var inputCountByte [1]byte
-	inputCountByte[0] = byte(inputCount)
-	b.Reset()
-	b.Write(inputCountByte[:])
-	inputCountTx := hex.EncodeToString(b.Bytes())
-	fmt.Println(inputCountTx)
-
-	// first txid
-	inputTxid := "1025c758203a9f4aab1ca4b9faa772acaf162faf6d5c0a312f6fec3b8c5e84ff"
-	inputTxidArr := make([]string, 0)
-	for i:=0; i<len(inputTxid)/2; i++ {
-		inputTxidArr = append(inputTxidArr, inputTxid[i*2 : i*2+2])
-	}
-	firstInputTx := ""
-	for i:=len(inputTxidArr); i>0; i-- {
-		firstInputTx += inputTxidArr[i-1]
-	}
-	fmt.Println(firstInputTx)
-
-	//first txid output index
-	inputIndex := 2
-	var inIndexByte [4]byte
-	inIndexByte[0] = byte(inputIndex)
-	b.Reset()
-	b.Write(inIndexByte[:])
-	inputIndexTx := hex.EncodeToString(b.Bytes())
-	fmt.Println(inputIndexTx)
-
-
-	// 임시 scriptsig 길이 ==> 00
-	tempScriptSigLen := "00"
-	fmt.Println(tempScriptSigLen)
-
-	// 4byte sequence field ==> ffffffff
-	sequenceField := "ffffffff"
-	fmt.Println(sequenceField)
-
-
-	// output tx count
-	outputCount := 1
-	var outputCountByte [1]byte
-	outputCountByte[0] = byte(outputCount)
-	b.Reset()
-	b.Write(outputCountByte[:])
-	outputCountTx := hex.EncodeToString(b.Bytes())
-	fmt.Println(outputCountTx)
-
-	// amount 8byte satoshis
-	value := uint64(12.345 * 100000000)
-	var valueByte [8]byte
-	binary.LittleEndian.PutUint64(valueByte[:], value)
-	b.Reset()
-	b.Write(valueByte[:])
-	valueTx := hex.EncodeToString(b.Bytes())
-	fmt.Println(valueTx)
-
-	// output addr => hash160 => scriptpubkey
-	scriptPubKey := ""
-	//outputAddr := "qqd8r9a36plmm9xgjsd3pkpuv0mgs4mjzuy4lme4s5"
-	outputAddr := "bitcoincash:qqd8r9a36plmm9xgjsd3pkpuv0mgs4mjzuy4lme4s5"
-	byteAddr, prefix, addrType, err := utils.CheckDecodeCashAddress(outputAddr)
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(prefix)
-	fmt.Println(addrType)
-	deOutAddrStr := hex.EncodeToString(byteAddr)
-	fmt.Println("deOutAddrStr", deOutAddrStr)
-	scriptPubKey = "76a914" + deOutAddrStr + "88ac"
-	// output scriptpubkey length(0x) => before outAddrTx
-	scriptPubKeyLen := strconv.FormatInt(int64(len(scriptPubKey)/2), 16)
-	outAddrTx := scriptPubKeyLen + scriptPubKey
-	fmt.Println("outAddrTx : ", outAddrTx)
-
-	// 4byte lockTime ==> 00000000
-	lockTime := "00000000"
-	fmt.Println(lockTime)
-
-	fmt.Println("rawTx : ", versionTx + inputCountTx + firstInputTx + inputIndexTx + tempScriptSigLen + sequenceField + outputCountTx + valueTx + outAddrTx + lockTime)
-}
+//func TestBchTxCreator(t *testing.T) {
+//	// version set
+//	version := uint32(2)
+//	var b bytes.Buffer
+//	var versionBuf [4]byte
+//	binary.LittleEndian.PutUint32(versionBuf[:], version)
+//	b.Write(versionBuf[:])
+//	versionTx := hex.EncodeToString(b.Bytes())
+//	fmt.Println(versionTx)
+//
+//	// input tx count
+//	inputCount := 1
+//	var inputCountByte [1]byte
+//	inputCountByte[0] = byte(inputCount)
+//	b.Reset()
+//	b.Write(inputCountByte[:])
+//	inputCountTx := hex.EncodeToString(b.Bytes())
+//	fmt.Println(inputCountTx)
+//
+//	// first txid
+//	inputTxid := "1025c758203a9f4aab1ca4b9faa772acaf162faf6d5c0a312f6fec3b8c5e84ff"
+//	inputTxidArr := make([]string, 0)
+//	for i:=0; i<len(inputTxid)/2; i++ {
+//		inputTxidArr = append(inputTxidArr, inputTxid[i*2 : i*2+2])
+//	}
+//	firstInputTx := ""
+//	for i:=len(inputTxidArr); i>0; i-- {
+//		firstInputTx += inputTxidArr[i-1]
+//	}
+//	fmt.Println(firstInputTx)
+//
+//	//first txid output index
+//	inputIndex := 2
+//	var inIndexByte [4]byte
+//	inIndexByte[0] = byte(inputIndex)
+//	b.Reset()
+//	b.Write(inIndexByte[:])
+//	inputIndexTx := hex.EncodeToString(b.Bytes())
+//	fmt.Println(inputIndexTx)
+//
+//
+//	// 임시 scriptsig 길이 ==> 00
+//	tempScriptSigLen := "00"
+//	fmt.Println(tempScriptSigLen)
+//
+//	// 4byte sequence field ==> ffffffff
+//	sequenceField := "ffffffff"
+//	fmt.Println(sequenceField)
+//
+//
+//	// output tx count
+//	outputCount := 1
+//	var outputCountByte [1]byte
+//	outputCountByte[0] = byte(outputCount)
+//	b.Reset()
+//	b.Write(outputCountByte[:])
+//	outputCountTx := hex.EncodeToString(b.Bytes())
+//	fmt.Println(outputCountTx)
+//
+//	// amount 8byte satoshis
+//	value := uint64(12.345 * 100000000)
+//	var valueByte [8]byte
+//	binary.LittleEndian.PutUint64(valueByte[:], value)
+//	b.Reset()
+//	b.Write(valueByte[:])
+//	valueTx := hex.EncodeToString(b.Bytes())
+//	fmt.Println(valueTx)
+//
+//	// output addr => hash160 => scriptpubkey
+//	scriptPubKey := ""
+//	//outputAddr := "qqd8r9a36plmm9xgjsd3pkpuv0mgs4mjzuy4lme4s5"
+//	outputAddr := "bitcoincash:qqd8r9a36plmm9xgjsd3pkpuv0mgs4mjzuy4lme4s5"
+//	byteAddr, prefix, addrType, err := utils.CheckDecodeCashAddress(outputAddr)
+//	if err != nil {
+//		fmt.Println(err)
+//	}
+//	fmt.Println(prefix)
+//	fmt.Println(addrType)
+//	deOutAddrStr := hex.EncodeToString(byteAddr)
+//	fmt.Println("deOutAddrStr", deOutAddrStr)
+//	scriptPubKey = "76a914" + deOutAddrStr + "88ac"
+//	// output scriptpubkey length(0x) => before outAddrTx
+//	scriptPubKeyLen := strconv.FormatInt(int64(len(scriptPubKey)/2), 16)
+//	outAddrTx := scriptPubKeyLen + scriptPubKey
+//	fmt.Println("outAddrTx : ", outAddrTx)
+//
+//	// 4byte lockTime ==> 00000000
+//	lockTime := "00000000"
+//	fmt.Println(lockTime)
+//
+//	fmt.Println("rawTx : ", versionTx + inputCountTx + firstInputTx + inputIndexTx + tempScriptSigLen + sequenceField + outputCountTx + valueTx + outAddrTx + lockTime)
+//}
 
